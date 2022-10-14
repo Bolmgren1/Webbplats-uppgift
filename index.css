@@ -1,15 +1,23 @@
 body {
     background-color:aqua;
-}
-
-h1 {
-    color:white;
     text-align:center;
-    
 
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    width:80%;
+    background-color:aqua;
+    padding: 0 10px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
 
 
 }
+
 
 
 
