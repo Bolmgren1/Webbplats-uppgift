@@ -1,22 +1,41 @@
 body {
-    background-color:aqua;
+    background-color:gray;
     text-align:center;
+    color:white;
+    border-style:dashed;
 
 }
 .wrapper{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
-    width:80%;
-    background-color:aqua;
+    width:90%;
+    background-color:black;
+    color:white;
     padding: 0 10px;
     grid-template-areas:
     "header"
     "nav"
     "main"
-
+    "footer"
 
 }
+header{
+    font-size:150%;
+    border-radius: 50px;
+    background-color: darkgray
+    
+    
+}
+
+nav{
+    
+
+}
+
+
+
+
 
 
 
