@@ -29,14 +29,17 @@ header{
 }
 
 nav{
-    
+    font-size:150%;
+    text-align:center;
+    white-space property:inline-block;
+
 
 }
+li{
+    
 
 
-
-
-
+}
 
 
 
