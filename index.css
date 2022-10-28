@@ -20,7 +20,12 @@ body {
     "footer"
 
 }
+div{
+    grid-area: header;
+
+}
 header{
+    grid-area: header;
     font-size:150%;
     border-radius: 50px;
     background-color: darkgray
@@ -35,11 +40,36 @@ nav{
 
 
 }
-li{
-    
+table, th, td{
+    border:1px solid black;
+    text-align:center;
 
 
 }
+
+td img{
+    height: 8em;
+
+}
+nav{
+    grid-area: nav;
+
+}
+nav li{
+    display: grid;
+    border:2px solid;
+    text-align:center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius:15px
+
+
+
+}
+
+    
+
+
+
 
 
 
