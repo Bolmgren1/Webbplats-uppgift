@@ -1,4 +1,4 @@
-body {
+body{
     background-color:gray;
     text-align:center;
     color:white;
@@ -7,12 +7,6 @@ body {
 }
 .wrapper{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
-    width:90%;
-    background-color:black;
-    color:white;
-    padding: 0 10px;
     grid-template-areas:
     "header"
     "nav"
@@ -26,7 +20,7 @@ div{
 }
 header{
     grid-area: header;
-    font-size:150%;
+    font-size:100%;
     border-radius: 50px;
     background-color: darkgray
     
@@ -35,8 +29,8 @@ header{
 
 nav{
     font-size:150%;
-    text-align:center;
-    white-space property:inline-block;
+    
+    
 
 
 }
@@ -55,17 +49,27 @@ nav{
     grid-area: nav;
 
 }
-nav li{
+nav > ul{
     display: grid;
     border:2px solid;
     text-align:center;
     grid-template-columns: 1fr 1fr 1fr;
-    border-radius:15px
+    grid-template-rows: auto;
+    grid-template-areas: "section";
+    border-radius:15px;
+    list-style-type:none;
+    
+    
 
 
 
 }
+main > ul{
+    text-align:left;
+    list-style-type:circle;
 
+
+}
     
 
 
