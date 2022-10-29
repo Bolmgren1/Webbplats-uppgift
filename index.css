@@ -1,12 +1,17 @@
-body{
-    background-color:gray;
-    text-align:center;
-    color:white;
-    border-style:dashed;
+body{/*kroppen*/
+    background-color:gray;/*bästämmer bakgrundsfärgen*/
+    text-align:center;/*Sätter texten imitten*/
+    color:white;/*TExtfärgen är vit*/
+    border-style:dashed;/*Själva borden runt sidan är "dashed"*/
 
 }
-.wrapper{
+.wrapper{/*Själva strukturen på hemsidan då detta är det som gör en gridlayout*/
     display: grid;
+    margin: 0 auto;
+    background-color: gray;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 13px;
     grid-template-areas:
     "header"
     "nav"
@@ -14,42 +19,40 @@ body{
     "footer"
 
 }
-div{
-    grid-area: header;
 
-}
-header{
+
+header{/*bestämmer färg osv på min header, den får även en egen plats i griden*/
     grid-area: header;
     font-size:100%;
-    border-radius: 50px;
+    border-radius: 55px;
     background-color: darkgray
     
     
 }
 
-nav{
+nav{ /*stroleken på texten i min nav*/
     font-size:150%;
     
     
 
 
 }
-table, th, td{
+table, th, td{/*Detta är färgen på min border och hur texten ska vara i min tabell*/
     border:1px solid black;
     text-align:center;
 
 
 }
 
-td img{
+td img{/*tabellens bild storlek*/
     height: 8em;
 
 }
-nav{
+nav{/*skapar plats till min nav, finns även med i min .wrapper*/
     grid-area: nav;
 
 }
-nav > ul{
+nav > ul{/*säger till att ul är ett "barn" till naven, gör så att mina tryckbara knappar till de tre olika sidorna är inom en border och även lite storlek med mera.*/
     display: grid;
     border:2px solid;
     text-align:center;
@@ -64,7 +67,7 @@ nav > ul{
 
 
 }
-main > ul{
+main > ul{/*Detta gör att texten på min lista på sida 3 håller sig till vänster på min sida och punkterna blir runda*/
     text-align:left;
     list-style-type:circle;
 
